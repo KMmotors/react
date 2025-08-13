@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -62,12 +62,14 @@ const App = () => {
 
 
       {/* ✅ Routes handle page switching */}
+      <HashRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/try" element={<Result />} />
         <Route path="/about" element={<About />} />
         <Route path="/community" element={<Community/>}/>
       </Routes>
+      </HashRouter>
     </>
   );
 };
