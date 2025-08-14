@@ -7,8 +7,10 @@ import './index.css'; // or wherever your global styles are
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <HashRouter>
+  <BrowserRouter>
    
       <App />
+   </BrowserRouter>
    
 </HashRouter> 
 );
